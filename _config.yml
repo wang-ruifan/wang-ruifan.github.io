@@ -215,6 +215,19 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  # 中文集合
+  zh-teaching:
+    output: true
+    permalink: /zh/:collection/:path/
+  zh-publications:
+    output: true
+    permalink: /zh/:collection/:path/
+  zh-portfolio:
+    output: true
+    permalink: /zh/:collection/:path/
+  zh-talks:
+    output: true
+    permalink: /zh/:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -272,6 +285,13 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # 为中文页面添加默认设置
+  - scope:
+      path: "zh"
+    values:
+      layout: single
+      author_profile: true
+      locale: "zh-CN"
 
 
 # Sass/SCSS

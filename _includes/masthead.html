@@ -4,18 +4,32 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <!-- 原有的导航链接 -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
+            {% else %}
+              {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          
+          <!-- 新增的语言切换器 -->
+          <li class="masthead__menu-item">
+            {% if page.url contains '/zh/' %}
+              <a href="{{ page.url | replace_first: '/zh', '' }}">English</a>
+            {% else %}
+              <a href="/zh{{ page.url }}">中文</a>
+            {% endif %}
+          </li>
         </ul>
+        <!-- 其他按钮等 -->
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>

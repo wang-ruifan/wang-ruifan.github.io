@@ -1,10 +1,10 @@
 ---
-permalink: /
-title: "Hi! Nice to meet you!"
+permalink: /zh/
+title: "你好！很高兴认识你！"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - /zh/about/
+  - /zh/about.html
 ---
 
 ## About me

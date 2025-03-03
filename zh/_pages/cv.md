@@ -1,10 +1,10 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+permalink: /zh/cv/
 author_profile: true
 redirect_from:
-  - /resume
+  - /zh/resume
 ---
 
 <p align = "center">

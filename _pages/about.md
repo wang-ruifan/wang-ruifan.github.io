@@ -12,7 +12,7 @@ redirect_from:
 I'm a fourth-year undergraduate student from [College of Mechatronics and Control Engineering](https://cmce.szu.edu.cn/English/Home.htm), [Shenzhen University](https://www.szu.edu.cn/), 
 , and soon to be pursuing a master's degree at the University of Hong Kong with major in Robot and Intelligent Systems. My focus is on robotic systems and application development, with a keen interest in ROS, SLAM, autonomous driving, AGVs, robotics, and embedded systems. I'm currently working on autonomous driving systems using Jetson, 3D LiDAR, and drive-by-wire chassis with Autoware.
 
-You can find my CV [here](../assets/Curriculum_Vitae.pdf).
+You can find my CV [here](../files/Curriculum_Vitae.pdf).
 
 ## Education
 
